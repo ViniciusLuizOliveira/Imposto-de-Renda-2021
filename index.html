@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<title>Imposto de renda</title>
+	</head>
+	
+	<body>
+		<div id="tudo">
+
+		<h1>Imposto de renda</h1>
+
+		<div id="informacoes">
+
+			<h2>Nome:</h2>
+			<input type="text" name="nomeC" id="nome" required>
+
+			<h2>Salário Bruto:</h2>
+			<input type="number" placeholder="R$" name="salarioB" id="salarioB" required>
+
+			<h2>Número de dependentes:</h2>
+			<input type="number" name="numeroDependentes" id="numeroDep" required>
+
+			<div id="botao1"><button onClick="exec()"><b>Calcular</b></button></div>
+			
+		</div>
+
+		<table id="tabelaDosDados">
+			<thead>
+				<tr>
+					<th>Nome</th>
+					<th>Salário Bruto</th>
+					<th>Nº de dependentes</th>
+					<th>% desconto INSS</th>
+					<th>desconto INSS</th>
+					<th>% desconto IRPF</th>
+					<th>desconto IRPF</th>
+					<th>Salário líquido</th>
+				</tr>
+			</thead>
+				<tr>
+					<td class="inv">1</td>
+					<td class="inv">2</td>
+					<td class="inv">3</td>
+					<td class="inv">4</td>
+					<td class="inv">5</td>
+					<td class="inv">6</td>
+					<td class="inv">7</td>
+					<td class="inv">8</td>
+				</tr>
+		</table>
+
+		</div>
+	</body>
+		<script src="./js/script.js"></script>
+</html>

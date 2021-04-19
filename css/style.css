@@ -1,0 +1,138 @@
+*{
+	font-family: "Segoe UI", Frutiger, Arial, sans-serif;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	background-color: #C5E9F0;
+}
+h1{
+	margin-top: 2vh;
+	text-align: center;
+	margin-bottom: 1.5vh;
+	padding-bottom: 1.5vh;
+	border-bottom: solid black 3px;
+}
+h1, h2{
+	color: #005DFF;
+}
+h2{
+	font-size: 20px;
+	margin-left: 6vw;
+	margin-bottom: 1vh;
+}
+input{
+	border-radius: 20px;
+	background-color: white;
+	margin-bottom: 2vh;
+	margin-left: 3vw;
+}
+div input{
+	width: 90vw;
+	font-size: 20px;
+}
+#botao1{
+	display: flex;
+	justify-content: center;
+}
+button{
+	margin-top: 1vh;
+	margin-bottom: 3vh;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	background-color: white;
+	border: none;
+	font-size: 20px;
+	border-radius: 20px;
+	color: #00D3FF;
+}
+table{
+	border-collapse: collapse;
+	width: 98%;
+	margin-left: 1%;
+}
+tr:nth-child(even){
+	background-color: #4D9AFF;
+}
+tr{
+	margin-bottom:2vh;
+}
+th, td{
+	font-size: 16px;
+	border: solid black 1px;
+} 
+.inv{
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+@media 
+only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)  {
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	div input{
+		text-indent: 2vw;
+	}
+	thead tr {
+		margin: 0 0 1rem 0;
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	td { 
+		font-size: 16px;
+		position: relative;
+		padding-left: 61%; 
+	}
+	td:before { 
+		font-weight: bold;
+		border-right: solid 1px black;
+		position: absolute;
+		top: 0;
+		left: 6px;
+		width: 45%; 
+		padding-right: 12vw; 
+		white-space: nowrap;
+	}
+	td:nth-of-type(1):before { content: "Nome"; }
+	td:nth-of-type(2):before { content: "Salário Bruto"; }
+	td:nth-of-type(3):before { content: "Nº de dependentes"; }
+	td:nth-of-type(4):before { content: "% desconto INSS"; }
+	td:nth-of-type(5):before { content: "desconto INSS"; }
+	td:nth-of-type(6):before { content: "% desconto IRPF"; }
+	td:nth-of-type(7):before { content: "desconto IRPF"; }
+	td:nth-of-type(8):before { content: "Salário líquido"; }
+}
+
+
+@media only screen and (min-width: 1025px){
+	h2{
+		margin-left: 3vw;
+	}
+	input{
+		margin-left: 2vw;
+	}
+	div input{
+		text-indent: 1vw;
+		width: 40vw;
+	}
+	#botao1{
+		display: block;
+	}
+	button{
+		margin-left: 18vw;
+	}
+	tr th{
+		width: 12.25%;
+	}
+	tr td{
+		padding-left: 0.5vw;
+		width: 12.25%;	
+	}
+	th, td{
+		font-size: 24px;
+	}
+}
